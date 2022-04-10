@@ -1,0 +1,22 @@
+/*Codes By Mahdi Tasha*/
+/*Variables*/
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+    --Font-size: 28px;
+}
+
+/*Resetting Some Styles*/
+img {pointer-events: none;}
+button {cursor: pointer;}
+
+/*All Selector*/
+* {
+    padding: 0;
+    height: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
