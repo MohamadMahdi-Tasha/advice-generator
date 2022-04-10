@@ -53,7 +53,7 @@ body {
     color: white;
     margin-bottom: 3rem;
     display: none;
-
+    max-width: 32ch;
 }
 
 .advice-generator--spinner-holder {
