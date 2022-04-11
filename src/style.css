@@ -56,6 +56,16 @@ body {
     max-width: 32ch;
 }
 
+.advice-generator--paragraph.error-msg:after,
+.advice-generator--paragraph.error-msg:before{
+    content: '' !important;
+}
+
+.advice-generator--paragraph.error-msg {
+    color: var(--Neon-Green);
+    text-shadow: 0 0 30px var(--Neon-Green);
+}
+
 .advice-generator--spinner-holder {
     width: 100%;
     display: flex;

@@ -29,6 +29,12 @@ function fetch_and_set_txt() {
             advice_number.textContent = advice_id;
             advice_paragraph.textContent = advice_txt;
         })
+        // A Catch Block That Shows Fall Back Ui If There Was Eny Errors
+        .catch(error => {
+            hide_loading();
+            advice_paragraph.classList.add('error-msg');
+            advice_paragraph.textContent = 'There Was An Error. Check Your Internet.';
+        })
 }
 
 // Adding Event Listener On Window That Listens To Load Event And Calls 'fetch_and_set_txt' Function
