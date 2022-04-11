@@ -5,11 +5,13 @@ const advice_paragraph = document.getElementById('advice-paragraph');
 const dice_button = document.getElementById('dice-button');
 const spinner_holder = document.getElementById('spinner-holder');
 
+// A Function That Shows Loading Animation
 function show_loading() {
     spinner_holder.style.display = 'flex';
     advice_paragraph.style.display = 'none';
 }
 
+// A Function That Hides Loading Animation
 function hide_loading() {
     spinner_holder.style.display = 'none';
     advice_paragraph.style.display = 'block';
