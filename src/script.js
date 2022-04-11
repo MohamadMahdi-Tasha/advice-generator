@@ -30,10 +30,13 @@ function fetch_and_set_txt() {
             advice_paragraph.textContent = advice_txt;
         })
         // A Catch Block That Shows Fall Back Ui If There Was Eny Errors
-        .catch(error => {
+        .catch(() => {
             hide_loading();
             advice_paragraph.classList.add('error-msg');
             advice_paragraph.textContent = 'There Was An Error. Check Your Internet.';
+
+            dice_button.style.opacity = '50%';
+            dice_button.style.pointerEvents = 'none';
         })
 }
 
